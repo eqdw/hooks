@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
-JIRA_TAG = /[A-Z]{2}-[0-9]{4}/
+# JIRA tags can have a variable amount of digits
+JIRA_TAG = /[A-Z]{2}-[0-9]{1,6}/
 WARNING = <<END_WARNING
 ============================================================
 ================ WARNING! Invalid JIRA tag =================
